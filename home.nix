@@ -35,7 +35,7 @@
     download = "$HOME/Téléchargements";
     videos = "$HOME/Vidéos";
     pictures = "$HOME/Images";
-    music = "$HOME/Musique";
+    music = "$HOME/Mes-Donnees/03_Ressources_Externes/Musique";
     desktop = "$HOME/Bureau";
     templates = "$HOME/Modèles";
     publicShare = "$HOME/Public";
