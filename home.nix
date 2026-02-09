@@ -14,6 +14,7 @@
   home.username = "benoit";
   home.homeDirectory = "/home/benoit";
   home.stateVersion = "25.11";
+  home.language.base = "fr_FR.UTF-8";
 
 
   imports = [
@@ -29,6 +30,16 @@
   xdg.userDirs = {
     enable = true;
     createDirectories = true;
+      # Définition manuelle des noms en français
+  # documents = "$HOME/Documents";
+  # download = "$HOME/Téléchargements";
+  # videos = "$HOME/Vidéos";
+  # pictures = "$HOME/Images";
+  # music = "$HOME/Musique";
+  # desktop = "$HOME/Bureau";
+  # templates = "$HOME/Modèles";
+  # publicShare = "$HOME/Public";
   };
+
 }
 
