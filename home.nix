@@ -20,6 +20,7 @@
     ./modules/git-autosync_systemd.nix
     ./modules/session_variables.nix
     ./modules/dotfiles.nix
+    ./modules/shell-scripts.nix
   ];
 
 
