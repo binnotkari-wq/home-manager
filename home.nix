@@ -22,6 +22,7 @@
     ./modules/dotfiles.nix
     ./modules/shell-scripts.nix
     ./modules/shell_settings.nix
+    ./modules/gnome_apps.nix
   ];
 
 

@@ -18,8 +18,8 @@
 \e[33msudo nixos-rebuild boot -I nixos-config=/home/benoit/Mes-Donnees/Git/nixos-dotfiles/$(hostname).nix\e[0m : nouvelle entrée de boot\n
 \e[33msudo nixos-rebuild switch -I nixos-config=/home/benoit/Mes-Donnees/Git/nixos-dotfiles/$(hostname).nix\e[0m : rebuild système et bascule live\n
 \e[33msudo nix-env --list-generations --profile /nix/var/nix/profiles/system\e[0m : lister les générations\n
-\e[33msudo nix-collect-garbage -d\e[0m : gros nettoyage\n"
-\e[33mhome-manager switch -f /home/benoit/Mes-Donnees/Git/home-manager/home.nix\e[0m : rebuild home manager et bascule live\n
+\e[33msudo nix-collect-garbage -d\e[0m : gros nettoyage\n
+\e[33mhome-manager switch -f /home/benoit/Mes-Donnees/Git/home-manager/home.nix\e[0m : rebuild home manager et bascule live\n"
     '')
 
     (pkgs.writeShellScriptBin "upd" ''     
