@@ -21,6 +21,7 @@
     ./modules/session_variables.nix
     ./modules/dotfiles.nix
     ./modules/shell-scripts.nix
+    ./modules/shell_settings.nix
   ];
 
 
