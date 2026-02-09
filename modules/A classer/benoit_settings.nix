@@ -1,17 +1,7 @@
 { pkgs, ... }:
 
 {
-  # Configuration de Git
-  programs.git = {
-    enable = true;
-    config = {
-      user.name  = "binnotkari-wq";
-      user.email = "benoit.dorczynski@gmail.com";
-      init.defaultBranch = "main";
-      core.editor = "nano";
-      credential.helper = "store"; # Stocke le token de manière persistante (dans ~/.git-credentials)
-    };
-  };
+
 
   # Configuration de bash
   programs.bash = {
@@ -48,9 +38,10 @@
     };
   };
 
-  # Variables de session
+
   environment.sessionVariables = {
-    FLATPAK_DOWNLOAD_TMPDIR = "$HOME/.flatpak-tmp";
-    HISTTIMEFORMAT = "%d/%m/%y %T ";
+
   };
+
+
 }
