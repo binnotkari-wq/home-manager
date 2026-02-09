@@ -31,15 +31,14 @@
   xdg.userDirs = {
     enable = true;
     createDirectories = true;
-      # Définition manuelle des noms en français
-  # documents = "$HOME/Documents";
-  # download = "$HOME/Téléchargements";
-  # videos = "$HOME/Vidéos";
-  # pictures = "$HOME/Images";
-  # music = "$HOME/Musique";
-  # desktop = "$HOME/Bureau";
-  # templates = "$HOME/Modèles";
-  # publicShare = "$HOME/Public";
+    documents = "$HOME/Documents";
+    download = "$HOME/Téléchargements";
+    videos = "$HOME/Vidéos";
+    pictures = "$HOME/Images";
+    music = "$HOME/Musique";
+    desktop = "$HOME/Bureau";
+    templates = "$HOME/Modèles";
+    publicShare = "$HOME/Public";
   };
 
 }
