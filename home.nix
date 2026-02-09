@@ -27,6 +27,7 @@
   ];
 
   # --- CREATION DES DOSSIERS STANDARDS XDG ---
+  home.file.".config/user-dirs.locale".text = "fr_FR";
   xdg.userDirs = {
     enable = true;
     createDirectories = true;
