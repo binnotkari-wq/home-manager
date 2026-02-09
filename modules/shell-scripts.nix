@@ -10,7 +10,7 @@
     # # configuration. For example, this adds a command 'my-hello' to your
     # # environment:
     
-    (pkgs.writeShellScriptBin "sys" ''
+    (pkgs.writeShellScriptBin "apps" ''
       awk '/environment.systemPackages = with pkgs; \[/ {flag=1; next} /\];/ {flag=0} flag' ~/Mes-Donnees/Git/nixos-dotfiles/software-setup/programs/CLI_tools.nix
     '')
 
