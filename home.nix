@@ -25,5 +25,10 @@
     ./modules/gnome_apps.nix
   ];
 
-
+  # --- CREATION DES DOSSIERS STANDARDS XDG ---
+  xdg.userDirs = {
+    enable = true;
+    createDirectories = true;
+  };
 }
+
