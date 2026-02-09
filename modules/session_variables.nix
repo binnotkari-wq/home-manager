@@ -19,9 +19,7 @@
   #  /etc/profiles/per-user/benoit/etc/profile.d/hm-session-vars.sh
   #
   home.sessionVariables = {
-    EDITOR = "nano";
-    FLATPAK_DOWNLOAD_TMPDIR = "$HOME/.flatpak-tmp";
-    HISTTIMEFORMAT = "%d/%m/%y %T ";
+  
   };
 
 }

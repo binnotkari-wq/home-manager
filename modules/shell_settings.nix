@@ -3,8 +3,13 @@
 {
   # Configuration de bash
   programs.bash = {
-
-    interactiveShellInit = ''
+    enable = true;
+    sessionVariables = {
+    HISTTIMEFORMAT = "%d/%m/%y %T ";
+    EDITOR = "nano";
+    FLATPAK_DOWNLOAD_TMPDIR = "/home/benoit/.flatpak-tmp";
+    };
+    initExtra = ''
       echo -e "\e[36m=== Raccourcis =====================================\e[0m"
       echo -e "- \e[33mapps : liste des logiciels CLI / TUI astucieux"
       echo -e "- \e[33msys : commandes système spécifique Nixos"
@@ -28,11 +33,5 @@
       
     };
   };
-
-
-  environment.sessionVariables = {
-
-  };
-
 
 }
