@@ -24,6 +24,7 @@
     ./modules/shell-scripts.nix
     ./modules/shell_settings.nix
     ./modules/gnome_apps.nix
+    ./modules/CLI_user-tools.nix
   ];
 
   # --- CREATION DES DOSSIERS STANDARDS XDG ---

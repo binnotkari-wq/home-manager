@@ -3,16 +3,16 @@
 {
 
   # The home.packages option allows you to install Nix packages into your environment.
-  home.packages = [
-    pkgs.kiwix-tools               # moteur wikipedia local. Lancer avec kiwix-serve --port 8080 "/chemin/vers/fichier.zim"
-    pkgs.llama-cpp-vulkan          # moteur LLM, interface web type Gemini / Chat GPT. Ne prend que 80 Mo : install de base.
-    pkgs.fragments                 # Équivalent de KTorrent (Client BitTorrent GTK)
-    pkgs.foliate                   # lecteur ebook
-    pkgs.celluloid                 # lecteur de vidéos
-    pkgs.pinta                     # logiciel de dessin
-    pkgs.gnome-secrets             # gestionnaire de mots # en flatpak c'est très biende passe compatible keepass
-    pkgs.resources
-    pkgs.shortwave
+  home.packages = with pkgs; [
+    kiwix-tools               # moteur wikipedia local. Lancer avec kiwix-serve --port 8080 "/chemin/vers/fichier.zim"
+    llama-cpp-vulkan          # moteur LLM, interface web type Gemini / Chat GPT. Ne prend que 80 Mo : install de base.
+    fragments                 # Équivalent de KTorrent (Client BitTorrent GTK)
+    foliate                   # lecteur ebook
+    celluloid                 # lecteur de vidéos
+    pinta                     # logiciel de dessin
+    gnome-secrets             # gestionnaire de mots # en flatpak c'est très biende passe compatible keepass
+    resources
+    shortwave
   ]; 
 
 

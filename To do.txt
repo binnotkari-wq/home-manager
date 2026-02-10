@@ -1,0 +1,22 @@
+L'OS est une simple base.
+Nixos (custom mini gnome ou kde : OK prêt)
+Silverblue : la base semble correcte, très peu de paquets
+
+
+Home manager devra déployer :
+
+- les preferences utilisateur
+- les flatpaks (et reglages des repos). On ajoute flathub, et on install en --user les noouveaux paquets depuis flathub. on ne touche pas aux autres repos enregistrés dans le systeme.
+- ramener les repos git et mettre en place la synchronisation automatique.
+au lieu d'installer l'extension tweaks, onn utilise la comande gsettings.
+
+
+
+git et wget ne sont pas installés de base sur nixos. Ont les ajoute donc aux nix systeme. Ils sont installés tous les deux sur Silverblue. Pas la pein de le smettre dans home manager.
+
+
+
+
+
+
+Faire un git clone de tout repo qui n'existe pas déjà
