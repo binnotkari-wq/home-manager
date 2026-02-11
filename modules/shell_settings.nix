@@ -5,9 +5,9 @@
   programs.bash = {
     enable = true;
     sessionVariables = {
-    HISTTIMEFORMAT = "%d/%m/%y %T ";
-    EDITOR = "nano";
-    FLATPAK_DOWNLOAD_TMPDIR = "/home/benoit/.flatpak-tmp";
+    # HISTTIMEFORMAT = "%d/%m/%y %T ";  # pris en charge directement par script de déploiement user
+    # EDITOR = "nano";  # pris en charge directement par script de déploiement user
+    # FLATPAK_DOWNLOAD_TMPDIR = "/home/benoit/.flatpak-tmp"; # pris en charge directement par script de déploiement user
     };
     initExtra = ''
       echo -e "\e[36m=== Raccourcis =====================================\e[0m"
@@ -17,11 +17,6 @@
       echo -e "\e[36m=== Installer un logiciel =====================================\e[0m"
       echo -e "- \e[33mnix-shell -p nomdulogiciel\e[0m : installer provisoirement un logiciel"
       echo -e "- \e[33mflatpak install --user flathub nomdulogiciel\e[0m" : le flatpak sera installé dans le repo flatpak userspace, depuis flathub
-
-      if [[ $SHLVL -eq 1 ]]; then
-        history -s "# SESSION $(date +%s) $$"
-        history -a
-      fi
     '';
 
     # Alias
