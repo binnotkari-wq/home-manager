@@ -1,14 +1,19 @@
 L'OS est une simple base.
 Nixos (custom mini gnome ou kde : OK prêt)
 Silverblue : la base semble correcte, très peu de paquets
+GLF OS : à voir
 
+Il faut que les applications installées par home manager pennent le dessus sur les application peut etre deja préinstallées de base sur le système.
 
+Le script d'installation, quand executé sur nixos, devra faire le xdg-user-dirs-update.
 Home manager devra déployer :
 
 - les preferences utilisateur
+- les aplication nix utilisateur
 - les flatpaks (et reglages des repos). On ajoute flathub, et on install en --user les noouveaux paquets depuis flathub. on ne touche pas aux autres repos enregistrés dans le systeme.
 - ramener les repos git et mettre en place la synchronisation automatique.
 au lieu d'installer l'extension tweaks, onn utilise la comande gsettings.
+Il faut que les applications installées par home manager pennent le dessus sur les application peut etre deja préinstallées de base sur le système.
 
 
 
