@@ -17,12 +17,9 @@
 
   imports = [
     ./modules/git-autosync_systemd.nix
-    ./modules/session_variables.nix
     ./modules/dotfiles.nix
     ./modules/shell-scripts.nix
-    ./modules/shell_settings.nix
     ./modules/gnome_apps.nix
-    ./modules/flatpaks.nix
     ./modules/CLI_user-tools.nix
   ];
 

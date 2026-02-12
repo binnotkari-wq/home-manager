@@ -1,5 +1,6 @@
 { config, pkgs, ... }:
 
+# Ne pas utiliser ce fichier. Les flatpaks sont déployés avec le script d'installation user flatpak.sh
 let
   # On récupère le module nix-flatpak directement depuis GitHub
   nix-flatpak = builtins.fetchTarball {
