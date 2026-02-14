@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
 
@@ -16,11 +16,11 @@
 
 
   imports = [
-    ./modules/git-autosync_systemd.nix
-    ./modules/dotfiles.nix
-    ./modules/shell-scripts.nix
-    ./modules/gnome_apps.nix
     ./modules/CLI_user-tools.nix
+    ./modules/dotfiles.nix
+    ./modules/git-autosync_systemd.nix
+    ./modules/gnome_apps.nix
+    ./modules/shell-scripts.nix
   ];
 
 
