@@ -9,7 +9,7 @@
     # # environment:
     
     (pkgs.writeShellScriptBin "apps" ''
-      awk '/environment.systemPackages = with pkgs; \[/ {flag=1; next} /\];/ {flag=0} flag' ~/Mes-Donnees/Git/nixos-dotfiles/software-setup/programs/CLI_tools.nix
+      awk '/environment.systemPackages = with pkgs; \[/ {flag=1; next} /\];/ {flag=0} flag' ~/Mes-Donnees/Git/home-manager/modules/CLI_user-tools.nix
     '')
 
     (pkgs.writeShellScriptBin "sys" ''    

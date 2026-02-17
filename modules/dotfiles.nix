@@ -1,7 +1,6 @@
 { config, pkgs, ... }:
 
 {
-
   programs.git = {
     enable = true;
     settings = {
@@ -26,6 +25,4 @@
     #   org.gradle.daemon.idletimeout=3600000
     # '';
   };
-
-
 }

@@ -1,13 +1,6 @@
 { config, pkgs, lib, ... }:
 
 {
-
-  # installer home-amanger de façon indépendante avec :
-  # 1. OK DANS SCRIPT : nix-channel --add https://github.com/nix-community/home-manager/archive/release-25.11.tar.gz home-manager # On ajoute le dépôt Home Manager 
-  # 2. OK DANS SCRIPT : nix-channel --update # On met à jour les dépôts 
-  # 3. OK DANS SCRIPT : nix-shell '<home-manager>' -A install
-  # 4. OK DANS SCRIPT : au premier "home-manager switch -f /home/benoit/Mes-Donnees/Git/home-manager/home.nix", il s'auto installera indépendamment
-  
   programs.home-manager.enable = true;
   home.username = "benoit";
   home.homeDirectory = "/home/benoit";
@@ -37,23 +30,5 @@
       fi
     '';
   };
-
-
-
-  # --- CREATION DES DOSSIERS STANDARDS XDG ---
-  # home.file.".config/user-dirs.locale".text = "fr_FR";
-  # xdg.userDirs = {
-    # enable = true;
-    # createDirectories = true;
-    # documents = "$HOME/Documents";
-    # download = "$HOME/Téléchargements";
-    # videos = "$HOME/Vidéos";
-    # pictures = "$HOME/Images";
-    # music = "$HOME/Mes-Donnees/03_Ressources_Externes/Musique";
-    # desktop = "$HOME/Bureau";
-    # templates = "$HOME/Modèles";
-    # publicShare = "$HOME/Public";
-  # };
-
 }
 
