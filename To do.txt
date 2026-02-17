@@ -12,7 +12,7 @@ Home manager devra déployer :
 - les aplication nix utilisateur
 - les flatpaks (et reglages des repos). On ajoute flathub, et on install en --user les noouveaux paquets depuis flathub. on ne touche pas aux autres repos enregistrés dans le systeme.
 - ramener les repos git et mettre en place la synchronisation automatique.
-au lieu d'installer l'extension tweaks, onn utilise la comande gsettings.
+au lieu d'installer l'extension tweaks, onn utilise la comande gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"
 Il faut que les applications installées par home manager pennent le dessus sur les application peut etre deja préinstallées de base sur le système.
 
 
