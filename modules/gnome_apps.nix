@@ -12,5 +12,6 @@
     gnome-secrets             # gestionnaire de mots # en flatpak c'est très biende passe compatible keepass
     resources
     shortwave
+    zenity                    # pour affichier des boites de dialoguedans des scripts
   ]; 
 }
