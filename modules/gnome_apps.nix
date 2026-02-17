@@ -1,6 +1,6 @@
 { config, pkgs, ... }:
 
-{s
+{
   # The home.packages option allows you to install Nix packages into your environment.
   home.packages = with pkgs; [
     kiwix-tools               # moteur wikipedia local. Lancer avec kiwix-serve --port 8080 "/chemin/vers/fichier.zim"
